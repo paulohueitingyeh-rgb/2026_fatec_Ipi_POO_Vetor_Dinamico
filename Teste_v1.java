@@ -7,6 +7,7 @@ public class Teste_v1 {
             var valor = gerador.nextInt(1, 11);
             v.adicionar(valor);
             System.out.println(v);
+            System.out.println("=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
             Thread.sleep(3000);
         }
     }
