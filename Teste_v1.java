@@ -5,11 +5,21 @@ public class Teste_v1 {
         var v = new VetorDinamico();
         while(true){
             var valor = gerador.nextInt(1, 11);
+            var oQueFazer = gerador.nextInt(0, 2);
+            switch(oQueFazer) {
+                case 0:
+                    System.out.println("Adicionando. . . .");
+                    v.adicionar(valor);
+                    break;
+                case 1:
+                    System.out.println("Removendo. . . .");
+                    v.remover();
+                    break;
+            }
             v.adicionar(valor);
             System.out.println(v);
             System.out.println("=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
             Thread.sleep(3000);
         }
     }
-
 }
